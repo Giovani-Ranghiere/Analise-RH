@@ -26,7 +26,7 @@ O projeto foi ancorado em três pilares analíticos:
 
 ### 3. Validação Preditiva Otimizada (Threshold Customizado)
 * **Holdout Out-of-Sample (80/20):** Separação estrita de conjuntos de treino e teste.
-* **Ajuste Ciente de Desbalanceamento:** Por focar em diagnóstico e interceptação antecipada, um modelo padrão com *threshold* preditivo de 50% ignoraria as raras evasões reais (entregando Recall zerado e enganando o negócio com ~84% de acurácia). Adotamos um **limiar estratégico de 16%** (base rate da empresa), assumindo propositalmente mais alarmes falsos (baixo custo pro RH) para garantir que mais de 50% dos talentos em risco fossem identificados com sucesso (Recall > 50%).
+* **Ajuste Ciente de Desbalanceamento:** Por focar em diagnóstico e interceptação antecipada, um modelo padrão com *threshold* preditivo de 50% ignoraria as raras evasões reais (entregando Recall zerado e enganando o negócio com ~84% de acurácia). Adotei um **limiar estratégico de 16%** (base rate da empresa), assumindo propositalmente mais alarmes falsos (baixo custo pro RH) para garantir que mais de 50% dos talentos em risco fossem identificados com sucesso (Recall > 50%).
 
 ## Tecnologias
 * **Linguagem:** R
